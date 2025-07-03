@@ -65,7 +65,7 @@ li a, li span {
 	text-decoration: none;
 	z-index: 1000;
 }
-li a:hover, .dropdown a:hover .dropbtn, nav-logo:hover {
+li a:hover, .dropdown a:hover .dropbtn, nav-logo:hover, span:hover {
 	background-color: rgb(90, 36, 48);
 	color: white;
 	transition: all 0.1s ease-in;
