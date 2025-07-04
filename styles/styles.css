@@ -21,7 +21,7 @@ nav {
 	font-family: "Inter", sans-serif;
 	font-size: 1em;
 }
-nav:has(.dropbtn:hover) {
+nav:has(.dropbtn:hover, .dropdown a:hover, .dropdown-content:hover) {
 	border-bottom-right-radius: 0px;
 }
 .nav-logo {
@@ -84,8 +84,9 @@ nav li .dropdown {
 	background-color: rgba(78, 45, 57, 0.6); /* 78,45,57 */
 	z-index: -1;
 	padding: 4px;
+	padding-top: 8px;
 	border-radius: 0px 0px 16px 16px;
-	top: 51.5px;
+	top: 47.5px;
 	right: 0;
 	left: auto;
 }
@@ -228,15 +229,19 @@ p {
 	color: #ffffff; /* Highlight color on hover */
 }
 .footer {
-	width: 90vw;
-	margin-top: -15vh;
-	margin-left: 5vw;
-	font-size: 1em;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-	flex-wrap: wrap;
-	gap: 1rem;
+  display: flex;
+  justify-content: space-between; /* space out the two <p> */
+  align-items: flex-end; /* vertically center */
+  width: 90vw;
+  margin-top: -12vh;
+  margin-left: 5vw;
+  font-size: 1em;
+  gap: 1rem;
+  flex-wrap: nowrap; /* prevent wrapping */
+}
+
+.footer p {
+  margin: 0; /* remove default margins so they don't add vertical spacing */ /* prevent line breaks inside paragraphs */
 }
 
 .btn {
