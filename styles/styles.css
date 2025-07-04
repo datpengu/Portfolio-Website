@@ -166,10 +166,22 @@ p {
 }
 
 .main-2 {
+	height: 100vh;
+	width: 100vw;
 	background-color: rgba(78, 78, 78, 0.5);
+	backdrop-filter: blur(8px);
 }
 
+.main-3 {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(28, 28, 28, 0.5);
+	backdrop-filter: blur(8px);
+}
+
+
 .main-2 .main-content {
+	width : 45vw;
 	text-align: flex-end;
 	margin: 0px 0px 0px 50vw;
 }
@@ -186,7 +198,6 @@ p {
 	margin: 0px 0px 0px 5vw;
 }
 .main-content ul {
-	list-style-type: none;
 	padding: 0;
 	margin: 0;
 }
@@ -194,8 +205,28 @@ p {
 	font-family: "Inter", sans-serif;
 	font-size: 1.5em;
 	color: #fff;
-	text-align: right;
+	list-style-type: none;
 } 
+.main-2 .main-content ul li {
+	text-align: right;
+}
+.main-content {
+	width: 90vw;
+	height: 100vh;
+	justify-content: center;
+	display: flex;
+	margin: 0px 0px 0px 5vw;
+}
+
+.link {
+	color: rgb(255, 153, 204); /* New link color */
+	text-decoration: underline;
+	transition: color 0.2s ease;
+}
+
+.main-content ul li a:hover {
+	color: #ffffff; /* Highlight color on hover */
+}
 .footer {
 	width: 90vw;
 	margin-top: -15vh;
@@ -206,6 +237,18 @@ p {
 	align-items: flex-end;
 	flex-wrap: wrap;
 	gap: 1rem;
+}
+
+.btn {
+	width: 15vw;
+	background-color: rgb(90, 36, 48);
+	color: white;
+	border: none;
+	border-radius: 12px;
+	padding: 12px 24px;
+	font-size: 1.2em;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
 
 @media (max-width: 1360px) {
