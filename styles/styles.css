@@ -1,6 +1,6 @@
 header {
 	position: fixed;
-	top: 30px;
+	top: 3vh;
 	width: 100%;
 	z-index: 1000;
 }
@@ -16,7 +16,7 @@ nav {
     display: flex;
     justify-content: space-between; /* Align logo left, links right */
     align-items: center;
-    width: 80%;
+    width: 80vw;
     padding: 4px 16px;
     font-family: "Inter", sans-serif;
 }
@@ -64,13 +64,14 @@ li a, li span {
 	text-align: center;
 	text-decoration: none;
 	z-index: 1000;
+	padding-right: 0px;
 }
 li a:hover, .dropdown a:hover .dropbtn, nav-logo:hover, span:hover {
 	background-color: rgb(90, 36, 48);
 	color: white;
 	transition: all 0.1s ease-in;
 }
-li.dropdown {
+li .dropdown {
 	display: inline-block;
 }
 .dropdown-content {
@@ -99,6 +100,8 @@ li.dropdown {
 body {
 	background: rgb(28, 28, 28);
 	margin: 0;
+	height: 100%; 
+	overflow: hidden;
 	z-index: -1;
 }
 h1 {
@@ -128,6 +131,13 @@ p {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	margin: 0px 0px 0px 20vh;
+	margin: 0px 0px 0px 10vw;
 
+}
+
+.footer {
+	width: 80%;
+	text-align: right;
+	margin-top: -6vh;
+	margin-left: 10vw;
 }
